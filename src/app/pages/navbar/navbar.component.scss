@@ -1,0 +1,78 @@
+@import "../../../variable.scss";
+
+.navbar {
+  background-color: $primaryUIColor1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $primaryUIColor3;
+  position: sticky;
+  top: 0;
+  div {
+    img {
+      display: none;
+    }
+  }
+
+  section {
+    display: flex;
+
+    gap: 1rem;
+    a {
+      color: $primaryUIColor2;
+      text-decoration: none;
+
+      font-size: 1.5rem;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    a:active,
+    a:hover,
+    a:focus {
+      color: $primaryColor1;
+    }
+    a.active {
+      color: $primaryColor1;
+      text-decoration: underline;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar {
+    div {
+      img {
+        display: block;
+      }
+      .show {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0%;
+        right: 0;
+        background-color: $primaryUIColor2;
+        a {
+          color: $primaryUIColor1;
+        }
+        a:active,
+        a:hover,
+        a:focus {
+          color: $primaryColor1;
+        }
+        a.active {
+          color: $primaryColor1;
+          text-decoration: underline;
+        }
+      }
+      .hide {
+        display: none;
+      }
+      section {
+        display: none;
+      }
+    }
+    button {
+      display: none;
+    }
+  }
+}

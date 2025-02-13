@@ -1,0 +1,47 @@
+@import "../../../variable.scss";
+.service {
+  background-color: $primaryUIColor1;
+  color: $primaryUIColor2;
+}
+.part {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.one {
+  margin-bottom: 3rem;
+}
+h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+p {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+a {
+  color: $primaryUIColor2;
+}
+div {
+  img {
+    margin-left: 0.2rem;
+  }
+}
+.btn_more2 {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .part {
+    .btn_more {
+      display: none;
+    }
+    .branding {
+      display: none;
+    }
+  }
+  .btn_more2 {
+    display: block;
+    margin-top: 2rem;
+  }
+}

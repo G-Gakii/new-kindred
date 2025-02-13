@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import "./variable.scss";
+@font-face {
+  font-family: "MangoGrotesque";
+  src: url("/assets/font/Mango Grotesque-VF.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "DM Sans", serif;
+
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // width: 100%;
+  // min-height: 100vh;
+}
+h2 {
+  font-family: MangoGrotesque;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+p {
+  font-size: 1.5rem;
+}
+button {
+  padding: 0.8rem 1.5rem;
+  text-transform: uppercase;
+  background-color: $primaryColor1;
+  border: none;
+  color: $primaryUIColor2;
+  font-family: MangoGrotesque;
+  font-weight: 700;
+  font-size: 2.5rem;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.container {
+  padding: 3rem 4rem;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
+}

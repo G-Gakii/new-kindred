@@ -1,0 +1,71 @@
+@import "../../../variable.scss";
+.footer {
+  div {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    section {
+      img {
+        margin-bottom: 2rem;
+      }
+    }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.5rem;
+      a {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  p {
+    color: $primaryUIColor3;
+    font-size: 1.2rem;
+  }
+  div.email {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid $primaryUIColor3;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+
+    input {
+      width: 90%;
+      height: 100%;
+      padding: 1rem;
+      border: none;
+    }
+    img.arrow {
+      background-color: $primaryColor1;
+
+      margin: 0;
+    }
+  }
+  hr {
+    margin: 2rem 0;
+    color: $primaryUIColor3;
+  }
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+::placeholder {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 800px) {
+  .footer {
+    div {
+      flex-wrap: wrap;
+      .contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .email {
+        flex-wrap: nowrap;
+      }
+    }
+  }
+}

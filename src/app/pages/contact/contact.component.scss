@@ -1,0 +1,56 @@
+@import "../../../styles.scss";
+.contact {
+  background-color: $primaryUIColor1;
+  color: $primaryUIColor2;
+
+  h1 {
+    font-size: 6rem;
+    font-family: MangoGrotesque;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  div.btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section.socials {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    a {
+      color: $primaryUIColor2;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .contact {
+    h1 {
+      font-size: 4rem;
+      margin: 0;
+      padding: 0;
+      text-align: start;
+    }
+    div {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    div.btn {
+      align-items: flex-start;
+    }
+    section.socials {
+      flex-wrap: wrap;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<div class="navbar container">
+  <img
+    ngSrc="/assets/NewKindred Logo SVG  1.png"
+    alt="NewKindred Logo"
+    width="173"
+    height="48"
+  />
+  <div>
+    <img
+      (click)="showMenu()"
+      ngSrc="/assets/Vector-2.png"
+      alt="vector"
+      height="20"
+      width="20"
+    />
+    <section [ngClass]="{ show: isShow, hide: !isShow }">
+      <a href="" routerLinkActive="active">Home</a>
+      <a href="#service" routerLinkActive="active">Service</a>
+      <a href="#work" routerLinkActive="active">Work</a>
+      <a href="#about" routerLinkActive="active">About Us</a>
+      <a routerLink="#" routerLinkActive="active">Blog</a>
+    </section>
+  </div>
+
+  <button>Let’s talk</button>
+</div>
